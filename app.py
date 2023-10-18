@@ -1,4 +1,12 @@
 
+'''
+Importamos librerías
+'''
+import streamlit as st
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as pl
+
 train_df['Sex'] = train_df['Sex'].map({'male': 0, 'female': 1})
 test_df['Sex'] = test_df['Sex'].map({'male': 0, 'female': 1})
 train_df['Sex'].fillna(train_df['Age'].mean(), inplace=True)
